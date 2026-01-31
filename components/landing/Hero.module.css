@@ -1,0 +1,131 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.bgGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120vw;
+    height: 60vh;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(5, 5, 5, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.orb1 {
+    top: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--primary-glow);
+    animation: float 20s infinite ease-in-out;
+}
+
+.orb2 {
+    bottom: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: var(--secondary-glow);
+    animation: float 25s infinite ease-in-out reverse;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, -30px);
+    }
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-out;
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.title span {
+    display: block;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 40px;
+}
+
+.statItem h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.statItem p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

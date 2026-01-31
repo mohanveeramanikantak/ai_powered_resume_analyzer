@@ -1,0 +1,175 @@
+/* Base Layout */
+.a4Page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    color: #1a1a1a;
+    padding: 15mm 20mm;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-size: 10pt;
+    line-height: 1.4;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+/* Common Section Styles */
+.section {
+    margin-bottom: 18px;
+}
+
+.sectionTitle {
+    font-size: 11pt;
+    font-weight: 700;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+}
+
+.expHeader,
+.eduHeader,
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.role,
+.school,
+.projectTitle {
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+.company,
+.degree {
+    font-weight: 600;
+    color: var(--primary-color, #333);
+}
+
+.date {
+    font-size: 9pt;
+    color: #444;
+}
+
+.description {
+    font-size: 9.5pt;
+    color: #333;
+    margin-top: 2px;
+}
+
+/* --- Classic Template (Times New Roman, Centered Header) --- */
+.classic {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.classic .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.classic .name {
+    font-size: 24pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000 !important;
+    /* Classic doesn't use colors for name */
+}
+
+.classic .contactInfo {
+    font-size: 10pt;
+    color: #333;
+}
+
+.classic .sectionTitle {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Modern Template (Sans-serif, Sidebar-ish feel) --- */
+.modern {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+}
+
+.modern .header {
+    margin-bottom: 25px;
+}
+
+.modern .name {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.modern .sectionTitle {
+    color: var(--primary-color, #3b82f6);
+    border-bottom: 2px solid var(--primary-color, #3b82f6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10pt;
+}
+
+/* --- Minimal Template (Spacious, Clean) --- */
+.minimal {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+}
+
+.minimal .name {
+    font-size: 22pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.minimal .sectionTitle {
+    font-weight: 400;
+    border-bottom: none;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9pt;
+}
+
+/* --- Professional Template (Georgia, Formal) --- */
+.professional {
+    font-family: Georgia, serif;
+}
+
+.professional .sectionTitle {
+    border-bottom: 2px solid #333;
+}
+
+/* --- Creative Template --- */
+.creative {
+    border-top: 10px solid var(--primary-color, #6366f1);
+}
+
+.creative .name {
+    color: var(--primary-color, #6366f1);
+    font-weight: 900;
+}
+
+/* --- Executive Template --- */
+.executive {
+    background: #fff;
+}
+
+.executive .header {
+    border-top: 1px solid #c9a961;
+    border-bottom: 1px solid #c9a961;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.executive .name {
+    font-family: 'Garamond', serif;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,128 @@
+.container {
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.searchSection {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.searchBar:focus-within {
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.searchInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filterGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.filterInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.filterInput::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.filterSelect {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.filterSelect:hover {
+    border-color: var(--primary);
+}
+
+.filterSelect option {
+    background: #1a1a1a;
+    color: white;
+}
+
+.actionArea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.jobCard {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobCard:hover {
+    background: var(--glass-bg-hover);
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}

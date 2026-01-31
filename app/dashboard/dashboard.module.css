@@ -1,0 +1,173 @@
+.main {
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.container {
+    padding: 120px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.statsStrip {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.statBox {
+    flex: 1;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.statVal {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.statLabel {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.resumeCard {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.resumeCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+}
+
+.cardPreview {
+    height: 160px;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.scoreBadge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.resumeTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.meta {
+    display: flex;
+    gap: 8px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+.cardActions {
+    display: flex;
+    gap: 10px;
+}
+
+.actionBtn {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s;
+}
+
+.actionBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+.actionBtn.delete:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.createCard {
+    border: 2px dashed var(--glass-border);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    transition: all 0.3s;
+    min-height: 250px;
+}
+
+.createCard:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(99, 102, 241, 0.02);
+}
+
+.plusCircle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomActions {
+    margin-top: 40px;
+    text-align: center;
+}
