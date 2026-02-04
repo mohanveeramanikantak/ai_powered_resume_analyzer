@@ -6,7 +6,11 @@
     "dev": "node scripts/dev.js",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:api": "node scripts/test-api.js",
+    "validate": "node scripts/validate.js",
+    "predeploy": "npm run validate && npm run build",
+    "postinstall": "echo 'Installation complete! Run npm run dev to start.'"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -24,5 +28,9 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
